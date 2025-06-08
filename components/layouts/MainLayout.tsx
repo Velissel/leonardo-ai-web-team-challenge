@@ -1,4 +1,4 @@
-import { Grid, GridItem } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import Footer from "../Footer";
 
 export default function MainLayout({
@@ -7,11 +7,11 @@ export default function MainLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <Grid minH='100%' gridTemplateRows='1fr auto'>
-      <GridItem as="main">
+    <Flex direction='column' minH='100%'>
+      <Box as="main" flex={1}>
         {children}
-      </GridItem>
+      </Box>
       <Footer/>
-    </Grid>
+    </Flex>
   );
 }
