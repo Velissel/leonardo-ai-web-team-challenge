@@ -4,7 +4,7 @@ import { useCallback } from 'react';
 import { Button } from '@chakra-ui/react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useRouter } from 'next/navigation';
-import { RootState } from '@/store/store'; // Assuming RootState is exported from store
+import { RootState } from '@/store/store';
 import { clearUser } from '@/store/slices/userSlice';
 
 export default function AuthButton() {

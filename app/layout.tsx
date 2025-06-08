@@ -33,7 +33,6 @@ export default function RootLayout({
         <Provider>
           <MainLayout>{children}</MainLayout>
         </Provider>
-        {/* {children} */}
       </body>
     </html>
   );

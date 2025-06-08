@@ -1,9 +1,8 @@
 import queryAniList from "@/data/query-ani-list";
 import AnimeListTable from "@/components/AnimeListTable";
-import AniListPagination from "@/components/AniListPagination"; // Import the new component
-import { Box, Heading, Stack } from "@chakra-ui/react"; // Changed VStack to Stack
+import AniListPagination from "@/components/AniListPagination";
+import { Box, Heading, Stack } from "@chakra-ui/react";
 
-// app/ani-list/page.tsx
 export default async function AniListPage({
   searchParams,
 }: {
