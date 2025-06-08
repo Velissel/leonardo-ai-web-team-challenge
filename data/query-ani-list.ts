@@ -26,6 +26,8 @@ export default async function queryAniList(page: number, offset: number) {
           title {
             userPreferred
           }
+          bannerImage
+          description
         }
       }
     }
