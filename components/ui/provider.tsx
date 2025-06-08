@@ -6,10 +6,10 @@ import { PersistGate } from "redux-persist/integration/react"
 import { store, persistor } from "@/store/store" // Using path alias @/
 import {
   ColorModeProvider,
-  type ColorModeProviderProps,
 } from "./color-mode"
+import { ThemeProviderProps } from "next-themes"
 
-export function Provider(props: ColorModeProviderProps) {
+export function Provider(props: ThemeProviderProps) {
   return (
     <ReduxProvider store={store}>
       <PersistGate loading={null} persistor={persistor}>
